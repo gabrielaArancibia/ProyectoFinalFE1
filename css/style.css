@@ -1,0 +1,220 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro&display=swap');
+
+body{
+    font-family: 'Be Vietnam Pro', sans-serif;
+    flex-wrap: wrap;
+}
+
+/* HEADER */
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    width: 100vw;
+    padding: 60px;
+}
+/* menu del header */
+header nav ul{
+    display: flex;
+    flex-direction: row;
+    font-weight: 500;
+    font-size: 13px;
+    list-style-type: none;
+    line-height: 176.1%;
+    /* width: 300px; */
+}
+
+header nav ul li a{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-decoration: none;
+    color: #242E52;
+    
+}
+/* boton del header */
+
+header div button{
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+    border-style: none;
+    background-color: #F3603B;
+    color: #FFFFFF;
+    font-size: 13.1806px;
+    height: 44px;
+    left: 1140.54px;
+    line-height: 19px;
+    top: 65px;
+    width: 134px;
+}
+/* MAIN */
+/* SECCION HOME */
+.contenedorFrase{
+    display: flex;
+    flex-direction: row;
+    padding: 69px;
+}
+
+.texthome{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 450px;
+}
+
+.fraseHome{
+    color: #232C50;
+    font-weight: bold;
+    font-size: 58px;
+    line-height: 66px;
+    font-weight: bold;
+    letter-spacing: -0.035em;
+    width: 450px;
+}
+.p-home{
+    color: black;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 157.1%;
+    padding-top: 36px;
+    padding-right: 280px;
+}
+.buttonHome{
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+    border-style: none;
+    background-color: #F3603B;
+    color: #FFFFFF;
+    font-size: 13.1806px;
+    height: 44px;
+    line-height: 19px;
+    width: 134px;
+}
+
+.imgHome{
+    width: 580px;
+    height: 525px;
+}
+
+/* SECCION SOBRE NOSOTROS */
+.seccionInformacion{
+    display: flex;
+    flex-direction: row;
+    padding: 60px;
+}
+
+section article h4{
+    color: #232851;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 114.6%;
+
+}
+
+.P-informacion{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 151.1%;
+    padding-top: 36px;
+    padding-right: 280px;
+}
+
+section.seccionInformacion article ul{
+    list-style-type: none;
+}
+
+section.seccionInformacion article span {
+    color: #323851;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 23px;
+    letter-spacing: -0.015em;
+}
+
+section.seccionInformacion article:nth-child(2) p{
+    color: #B3B2B7;
+    font-weight: 500;
+    font-size: 16.2984px;
+    line-height: 26px;
+    letter-spacing: -0.01em;
+    padding-top: 5px;
+}
+
+section.seccionInformacion article:nth-child(2) button{
+    background: #F3603B;
+    border-radius: 30px;
+    border-style: none;
+    color: #FFFFFF;
+    height: 30px;
+    width: 50px;
+}
+
+
+/*SECCION TESTIMONIOS  */
+.h4-testimonios{
+    color: #242E53;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 39.2143px;
+    line-height: 156.6%;
+    letter-spacing: -0.01em;
+}
+
+.seccion-testimonios{
+    display: flex;
+    margin-top: 60px;
+}
+
+section.seccion-testimonios article{
+    background: #FAFAFA;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+section.seccion-testimonios article h6{
+    color: #3F4868;
+    font-weight: bold;
+    font-size: 16.0714px;
+    line-height: 156.6%;
+    letter-spacing: -0.01em;
+}
+section.seccion-testimonios article{ 
+    color: #B9B9C1;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 156.6%;
+    text-align: center;
+}
+
+
+/* SECCIION FRASE */
+.seccion-frase{
+    background-color: #F3613C;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+section.seccion-frase button{
+    background: #FFFFFF;
+    color:  #F3603B;;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+    border-style: none;
+    font-weight: 500;
+    font-size: 13.1806px;
+    line-height: 19px;
+    width: 134px;
+    height: 44px;
+
+}
