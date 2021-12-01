@@ -8,6 +8,7 @@
 
 body{
     font-family: 'Be Vietnam Pro', sans-serif;
+    width: 100vw;
     flex-wrap: wrap;
 }
 
@@ -48,6 +49,7 @@ header div button{
     border-style: none;
     background-color: #F3603B;
     color: #FFFFFF;
+    cursor: pointer;
     font-size: 13.1806px;
     height: 44px;
     left: 1140.54px;
@@ -94,6 +96,7 @@ header div button{
     border-style: none;
     background-color: #F3603B;
     color: #FFFFFF;
+    cursor: pointer;
     font-size: 13px;
     height: 44px; 
     margin-top: 28px;
@@ -132,30 +135,47 @@ section article h4{
     padding-right: 270px;
     
 }
+ ol{
+     list-style-type: none;
+ }
 
-.li-uno{
-    list-style-image: url(../imagenes/li-uno.png);
-    
+article ol li div.contenedor-numero{
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+    border-style: none;
+    background-color: #F3603B;
+    display:inline-block;
+    text-align: center;
+    width: 69px;
+    height: 43px;
+    text-align: center;
+    padding: 9px;
+    margin-right: 9px;
 }
 
-.li-dos{
-    list-style-image: url(../imagenes/li-dos.png);
-
-}
-
-.li-tres{
-    list-style-image: url(../imagenes/li-tres.png);
-    
+.numero-lista{
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 23px;
 }
 
 
-section.seccion-informacion article span {
+.titulo-lista{
     color: #323851;
     font-weight: bold;
     font-size: 16px;
     line-height: 23px;
     letter-spacing: -0.015em;
     margin-top: 5px;
+}
+
+.parrafo-lista{
+    margin: 0px 87px 0px 86px;
+}
+
+.li-margin{
+    margin: 44px 0px 44px 0px;
 }
 
 section.seccion-informacion article:nth-child(2) p{
@@ -236,9 +256,9 @@ div.button-testimonios button{
     border-style: none;
     background-color: #F3603B;
     color: #FFFFFF;
+    cursor: pointer;
     font-size: 13.1806px;
     height: 44px;
-    left: 1140.54px;
     line-height: 19px;
     top: 65px;
     width: 134px;
@@ -268,6 +288,7 @@ section.seccion-frase button{
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
     border-radius: 50px;
     border-style: none;
+    cursor: pointer;
     font-weight: 500;
     font-size: 13.1806px;
     line-height: 19px;
@@ -282,11 +303,24 @@ footer {
     background: #1E1E26;
     display: flex;
     justify-content: space-between;
+    padding: 0px 30px 0px 30px;
+    height: 150px;
 }
 
-.contenedor-1-footer {
+footer article.contenedor-uno{
     display: flex;
+    width: 189px;
+    justify-content: space-evenly;
     flex-direction: column;
+}
+
+footer article.contenedor-uno img{
+    width: fit-content;
+    margin-left: 27px;
+}
+
+footer article.contenedor-uno div{
+    margin-left: 43px;
 }
 
 i{
@@ -295,28 +329,47 @@ i{
     width: 20px;
 }
 
+footer article.contenedor-dos{
+    width: 480px;
+    margin-left: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    line-height: 30px;
+}
 
-footer div.contenedor-2-footer ul{
+footer article.contenedor-dos ul{
     display: flex;
     flex-direction: column;
     list-style-type: none;
 }
 
-footer div.contenedor-2-footer ul li a{
+footer article.contenedor-dos ul:nth-child(2){
+    margin-bottom: 27px;
+}
+
+footer ul li a{
     text-decoration: none;
     color: #FFFFFF;
     font-weight: 500;
     font-size: 13px;
     line-height: 176.1%;
     }
- /* formulario del footer */
- .contenedor-formulario span{
-    color: #8C8C94;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 18px;
 
- }
+
+
+ /* formulario del footer */
+
+article.contenedor-tres{
+    padding-left: 80px;
+    display: flex;
+    align-items: center;
+}
+
+article.contenedor-tres form { 
+    display: flex;
+    flex-direction: row;
+}
 
 form textarea{
     background: #FFFFFF;
@@ -327,14 +380,26 @@ form textarea{
     font-weight: 600;
     font-size: 13px;
     line-height: 19px;
+    text-align: center;
 }
  form button {
     background: #F3603B;
     border-radius: 50px;
     border: none;
     color: #FFFFFF;
+    cursor: pointer;
     width: 63px;
     height: 42px;
     left: 209.91px;
     top: 3.26px;
  }
+
+ footer span{
+    color: #8C8C94;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    justify-content:flex-end;
+    align-self: flex-end;
+}
+
