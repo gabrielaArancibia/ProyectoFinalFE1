@@ -16,28 +16,28 @@ header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-    position: relative;
     width: 100vw;
     padding: 60px;
 }
+
+header nav{
+    width: 400px;
+}
+
 /* menu del header */
-header nav ul{
+header nav ul {
     display: flex;
-    flex-direction: row;
-    font-weight: 500;
-    font-size: 13px;
+    justify-content: space-between;
     list-style-type: none;
-    line-height: 176.1%;
-    /* width: 300px; */
 }
 
 header nav ul li a{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
     text-decoration: none;
     color: #242E52;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 176.1%;
+
     
 }
 /* boton del header */
@@ -57,20 +57,21 @@ header div button{
 }
 /* MAIN */
 /* SECCION HOME */
-.contenedorFrase{
+.contenedor-frase{
     display: flex;
-    flex-direction: row;
     padding: 69px;
+    justify-content: space-between;
+
 }
 
-.texthome{
+.contenedor-texto{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     width: 450px;
 }
 
-.fraseHome{
+.frase-Home{
     color: #232C50;
     font-weight: bold;
     font-size: 58px;
@@ -83,29 +84,33 @@ header div button{
     color: black;
     font-weight: 500;
     font-size: 16px;
-    line-height: 157.1%;
-    padding-top: 36px;
-    padding-right: 280px;
+    line-height: 160%;
+    margin-top: 36px;
 }
 .buttonHome{
+    align-self: flex-start;
     box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
     border-radius: 50px;
     border-style: none;
     background-color: #F3603B;
     color: #FFFFFF;
-    font-size: 13.1806px;
-    height: 44px;
+    font-size: 13px;
+    height: 44px; 
+    margin-top: 28px;
     line-height: 19px;
     width: 134px;
 }
+   
+   
 
 .imgHome{
     width: 580px;
     height: 525px;
+    margin-top: -80px;
 }
 
 /* SECCION SOBRE NOSOTROS */
-.seccionInformacion{
+.seccion-informacion{
     display: flex;
     flex-direction: row;
     padding: 60px;
@@ -116,53 +121,62 @@ section article h4{
     font-weight: bold;
     font-size: 36px;
     line-height: 114.6%;
-
+    margin-right: 80px;
 }
 
 .P-informacion{
     font-weight: 500;
     font-size: 16px;
     line-height: 151.1%;
-    padding-top: 36px;
-    padding-right: 280px;
+    margin-top: 36px;
+    padding-right: 270px;
+    
 }
 
-section.seccionInformacion article ul{
-    list-style-type: none;
+.li-uno{
+    list-style-image: url(../imagenes/li-uno.png);
+    
 }
 
-section.seccionInformacion article span {
+.li-dos{
+    list-style-image: url(../imagenes/li-dos.png);
+
+}
+
+.li-tres{
+    list-style-image: url(../imagenes/li-tres.png);
+    
+}
+
+
+section.seccion-informacion article span {
     color: #323851;
     font-weight: bold;
     font-size: 16px;
     line-height: 23px;
     letter-spacing: -0.015em;
+    margin-top: 5px;
 }
 
-section.seccionInformacion article:nth-child(2) p{
+section.seccion-informacion article:nth-child(2) p{
     color: #B3B2B7;
     font-weight: 500;
     font-size: 16.2984px;
     line-height: 26px;
     letter-spacing: -0.01em;
-    padding-top: 5px;
-}
-
-section.seccionInformacion article:nth-child(2) button{
-    background: #F3603B;
-    border-radius: 30px;
-    border-style: none;
-    color: #FFFFFF;
-    height: 30px;
-    width: 50px;
+    margin-top: 5px;
 }
 
 
 /*SECCION TESTIMONIOS  */
 .h4-testimonios{
-    color: #242E53;
     display: flex;
     justify-content: center;
+    margin: 135px 0px 100px 0px;
+    }
+
+div.h4-testimonios h4{
+    color: #242E53;
     font-weight: bold;
     font-size: 39.2143px;
     line-height: 156.6%;
@@ -171,7 +185,8 @@ section.seccionInformacion article:nth-child(2) button{
 
 .seccion-testimonios{
     display: flex;
-    margin-top: 60px;
+    margin: 60px 40px 0px 40px;
+    height: 200px;
 }
 
 section.seccion-testimonios article{
@@ -179,31 +194,73 @@ section.seccion-testimonios article{
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
+    padding: 0px 55px;
 }
+
+section.seccion-testimonios article img {
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    bottom: 170px;
+
+
+}
+
 section.seccion-testimonios article h6{
     color: #3F4868;
     font-weight: bold;
-    font-size: 16.0714px;
-    line-height: 156.6%;
-    letter-spacing: -0.01em;
-}
-section.seccion-testimonios article{ 
-    color: #B9B9C1;
-    font-weight: 600;
     font-size: 16px;
-    line-height: 156.6%;
+    line-height: 156%;
+    letter-spacing: -0.01em;
+    margin-top: 52px;
+}
+section.seccion-testimonios article p{ 
+    color: #B9B9C1;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 156%;
+    margin-top: 20px;
     text-align: center;
+}
+
+.button-testimonios{
+    display: flex;
+    justify-content:center;
+    margin-top: 60px;
+}
+
+div.button-testimonios button{
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+    border-style: none;
+    background-color: #F3603B;
+    color: #FFFFFF;
+    font-size: 13.1806px;
+    height: 44px;
+    left: 1140.54px;
+    line-height: 19px;
+    top: 65px;
+    width: 134px;
 }
 
 
 /* SECCIION FRASE */
 .seccion-frase{
     background-color: #F3613C;
-    color: #FFFFFF;
     display: flex;
     justify-content: space-between;
     padding: 50px;
+    margin-top: 150px;
 }
+
+section.seccion-frase h3{
+     color: #FFFFFF;
+     font-weight: bold;
+     font-size: 40px;
+     line-height: 50px;
+     letter-spacing: -0.005em;
+    }
 
 section.seccion-frase button{
     background: #FFFFFF;
@@ -216,5 +273,68 @@ section.seccion-frase button{
     line-height: 19px;
     width: 134px;
     height: 44px;
-
 }
+
+
+/* SECCION FOOTER */
+
+footer {
+    background: #1E1E26;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contenedor-1-footer {
+    display: flex;
+    flex-direction: column;
+}
+
+i{
+    color: #FFFFFF;
+    height: 20px;
+    width: 20px;
+}
+
+
+footer div.contenedor-2-footer ul{
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+}
+
+footer div.contenedor-2-footer ul li a{
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 176.1%;
+    }
+ /* formulario del footer */
+ .contenedor-formulario span{
+    color: #8C8C94;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+
+ }
+
+form textarea{
+    background: #FFFFFF;
+    border-radius: 50px;
+    color: #A0A0A0;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 19px;
+}
+ form button {
+    background: #F3603B;
+    border-radius: 50px;
+    border: none;
+    color: #FFFFFF;
+    width: 63px;
+    height: 42px;
+    left: 209.91px;
+    top: 3.26px;
+ }
