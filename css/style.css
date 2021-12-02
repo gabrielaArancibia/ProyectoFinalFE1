@@ -82,7 +82,7 @@ header div button{
 .p-home{
     color: black;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 20px;
     line-height: 160%;
     margin-top: 36px;
 }
@@ -126,7 +126,7 @@ section article h4{
 
 .P-informacion{
     font-weight: 500;
-    font-size: 16px;
+    font-size: 20px;
     line-height: 151.1%;
     margin-top: 36px;
     padding-right: 270px;
@@ -172,7 +172,7 @@ article ol li div.contenedor-numero{
 }
 
 .li-margin{
-    margin: 44px 0px 44px 0px;
+    margin: 5px 0px 44px 0px;
 }
 
 section.seccion-informacion article:nth-child(2) p{
@@ -389,9 +389,9 @@ form textarea{
     height: 42px;
     left: 209.91px;
     top: 3.26px;
- }
+}
 
- footer span{
+footer span{
     color: #8C8C94;
     font-weight: 500;
     font-size: 12px;
@@ -400,13 +400,18 @@ form textarea{
     align-self: flex-end;
 }
 
+
 /* RESPONSIVE */
 @media(max-width:375px) {
     body:-webkit-scrollbar {
         width: 0;
         overflow-x: hidden;
-       }
-        
+    }
+    
+     /* *{
+        border: 1px solid red;
+    } */
+    
     
     /* HEADER */
     header{
@@ -434,15 +439,16 @@ form textarea{
         /* width: 130px; */
         height: max-content;
     }
-     .componente{
+    
+    .componente{
         width: 27px;
         height: 5px;
         background-color: #232C50;
         margin: 4px;
-     }
+    }
 
-/* MAIN */
-/* SECCION HOME*/
+ /* MAIN */
+ /* SECCION HOME*/
 
 
 
@@ -463,7 +469,7 @@ form textarea{
     .frase-Home{
         font-size: 36px;
         text-align: -webkit-center;
-        width: 370px;
+        width: 330px;
         line-height: 45px;
     }
 
@@ -477,7 +483,7 @@ form textarea{
 
     .p-home{
         color:#B3B2B7;
-        width: 252px;
+        width: 340px;
         padding: 20px 0px;
         text-align: center;
         font-weight: bold;    ;
@@ -487,36 +493,50 @@ form textarea{
         align-self: center;
     }
 
+    /* seccion sobre nosotros */
+
     .seccion-informacion{
         display: flex;
         flex-direction: column;
         margin-top: 159px;
-        padding: 0px;
+        padding: 7px;
     }
 
     .seccion-informacion2{
         display: flex;
         flex-direction: column;
-        width: 375px;
-        margin: 0px 65px;
+        width: 367px
+        
     }
-    
+    section.seccion-informacion article.seccion-informacion2 h4{
+        margin: 0px;
+        text-align: center;
+    }
     
     .seccion-informacion3{
         margin-top: 80px;
     }
 
+    section.seccion-informacion article.seccion-informacion3 ol{
+        padding: 15px;
+    }
+
+
     .P-informacion{
+        display: inline-block;
         margin-top: 36px;
-        padding-right: 72px;
+        padding-right: 7px;
         text-align: center;
-        margin-right: 46px;
+        /* margin-right: 46px; */
         font-weight: bold;
         color:#B3B2B7;
     }
 
     .parrafo-lista{
-        width: 220px;
+        width: 361px;
+        margin: 0px;
+        text-align: center;
+        margin-top: 10px;
     }   
     
     /* SECCION TESTIMONIOS */
@@ -528,6 +548,10 @@ form textarea{
     .seccion-testimonios{
         display: flex;
         flex-direction: column;
+    }
+
+    section.seccion-testimonios article img {
+        bottom: 170px;
     }
 
     .li-margin{
@@ -553,7 +577,8 @@ form textarea{
         margin-top: 30px;
     }
 
-/* FOOTER */
+
+ /* FOOTER */
     footer{
         display: flex;
         flex-direction: column-reverse;
@@ -562,9 +587,19 @@ form textarea{
         height: 500px;
     }
 
-    .contenedor-uno{
+    footer article.contenedor-uno{
         display: flex;
         flex-direction: column-reverse;
+        width: 240px;
+    }
+
+    footer article.contenedor-uno img{
+        margin-left: 39px;
+    }
+
+    footer article.contenedor-uno div{
+        margin-left: -35px;
+        margin-bottom: 20px;
     }
 
     .container-fab{
@@ -573,19 +608,22 @@ form textarea{
         margin: 10px -38px;
     }
 
+    footer article.contenedor-dos{
+        width: 230px;
+        margin-left: -7px;
+        display: flex;
+        align-items: center;
+        line-height: 30px;
+    }
     footer span{
         order: -1;
+        width: 246px;
     }
 
     form{
         margin-top: 30px;
+        margin-right: 60px;
     }
 }
 
 
-@media (min-width: 375px) and (max-width: 5000px) {
-   
-    .contenedorImg{
-        display: none;
-    }
-}
