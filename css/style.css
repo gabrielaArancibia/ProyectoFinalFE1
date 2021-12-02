@@ -8,7 +8,6 @@
 
 body{
     font-family: 'Be Vietnam Pro', sans-serif;
-    width: 100vw;
     flex-wrap: wrap;
 }
 
@@ -17,7 +16,6 @@ header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 100vw;
     padding: 60px;
 }
 
@@ -63,7 +61,6 @@ header div button{
     display: flex;
     padding: 69px;
     justify-content: space-between;
-
 }
 
 .contenedor-texto{
@@ -403,3 +400,192 @@ form textarea{
     align-self: flex-end;
 }
 
+/* RESPONSIVE */
+@media(max-width:375px) {
+    body:-webkit-scrollbar {
+        width: 0;
+        overflow-x: hidden;
+       }
+        
+    
+    /* HEADER */
+    header{
+        
+        display: flex;
+        justify-content: space-evenly;
+        align-items: baseline;
+        padding: 0px;
+        margin-top: 48px;
+    }
+
+    .svg-div{
+        padding: 0px 18px;
+    }
+    
+    header nav ul{
+        display: none;
+    }
+
+    header div button{
+        display: none;
+    }
+
+    .menu-hamburguesa{
+        /* width: 130px; */
+        height: max-content;
+    }
+     .componente{
+        width: 27px;
+        height: 5px;
+        background-color: #232C50;
+        margin: 4px;
+     }
+
+/* MAIN */
+/* SECCION HOME*/
+
+
+
+    .contenedor-frase{
+        display: flex;
+        padding: 0px;
+        justify-content: space-around;
+        flex-direction: column-reverse;
+        margin-top: 53px;
+        margin-left: 71px;
+
+    } 
+    
+    .img-responsive{
+        width: 243px;
+    }
+
+    .frase-Home{
+        font-size: 36px;
+        text-align: -webkit-center;
+        width: 370px;
+        line-height: 45px;
+    }
+
+    .contenedor-texto{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 180px;
+        margin-left: 31px;
+    }
+
+    .p-home{
+        color:#B3B2B7;
+        width: 252px;
+        padding: 20px 0px;
+        text-align: center;
+        font-weight: bold;    ;
+    }
+
+    .buttonHome{
+        align-self: center;
+    }
+
+    .seccion-informacion{
+        display: flex;
+        flex-direction: column;
+        margin-top: 159px;
+        padding: 0px;
+    }
+
+    .seccion-informacion2{
+        display: flex;
+        flex-direction: column;
+        width: 375px;
+        margin: 0px 65px;
+    }
+    
+    
+    .seccion-informacion3{
+        margin-top: 80px;
+    }
+
+    .P-informacion{
+        margin-top: 36px;
+        padding-right: 72px;
+        text-align: center;
+        margin-right: 46px;
+        font-weight: bold;
+        color:#B3B2B7;
+    }
+
+    .parrafo-lista{
+        width: 220px;
+    }   
+    
+    /* SECCION TESTIMONIOS */
+
+    .testimonios-d-none{
+        display: none;
+    }
+
+    .seccion-testimonios{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .li-margin{
+        margin: -15px;
+        margin-top: 20px;
+    }
+
+    
+    /* SECCION FRASE */
+    
+    .seccion-frase{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    section.seccion-frase h3{
+        text-align: center;
+    }
+
+    section.seccion-frase button{
+        margin-top: 30px;
+    }
+
+/* FOOTER */
+    footer{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-items: center;
+        height: 500px;
+    }
+
+    .contenedor-uno{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .container-fab{
+        display: flex;
+        justify-content: space-between;
+        margin: 10px -38px;
+    }
+
+    footer span{
+        order: -1;
+    }
+
+    form{
+        margin-top: 30px;
+    }
+}
+
+
+@media (min-width: 375px)(max-width: 5000px) {
+   
+    .contenedorImg{
+        display: none;
+    }
+}
