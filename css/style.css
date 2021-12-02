@@ -583,7 +583,7 @@ form textarea{
 }
 
 
-@media (min-width: 375px)(max-width: 5000px) {
+@media (min-width: 375px) and (max-width: 5000px) {
    
     .contenedorImg{
         display: none;
