@@ -486,7 +486,8 @@ footer span{
         width: 340px;
         padding: 20px 0px;
         text-align: center;
-        font-weight: bold;    ;
+        font-weight: bold;
+        font-size: 16px;
     }
 
     .buttonHome{
@@ -530,6 +531,7 @@ footer span{
         /* margin-right: 46px; */
         font-weight: bold;
         color:#B3B2B7;
+        font-size: 16px;
     }
 
     .parrafo-lista{
@@ -626,4 +628,9 @@ footer span{
     }
 }
 
+@media(min-width:400px){
+    .menu-hamburguesa{
+        display: none;
+    }
+}
 
